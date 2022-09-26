@@ -1,0 +1,8 @@
+.DS_Store
+.idea/
+*.tfstate
+*.pub
+*.backup
+*.terraform
+asg.tf
+asg-capacity.tf

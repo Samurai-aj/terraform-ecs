@@ -1,0 +1,29 @@
+[
+  {
+    "name": "metabase",
+    "image": "docker.io/metabase/metabase:latest",
+    "cpu": 800,
+    "memory": 800,
+    "portMappings": [
+      {
+        "containerPort" : 3000
+      }
+    ],
+    "essential": true,
+
+    "volume":  [
+      {
+      "name" : "metabase-volume", 
+      "mountPoints": "/mnt"
+      }
+    ],
+
+    "environment": [
+      {
+        "name": "MB_DB_FILE", 
+        "value" : "/mnt/metabase.db"
+      }
+    ]
+          
+  }
+]

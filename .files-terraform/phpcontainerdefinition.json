@@ -1,0 +1,19 @@
+[
+    {
+      "name": "php-myadmin",
+      "image": "docker.io/phpmyadmin:latest",
+      "cpu": 256,
+      "memory": 182,
+      "portMappings": [
+        {
+          "containerPort" : 80
+        }
+      ],
+      "essential": true,
+      "environment": [ 
+        {
+        "name": "PMA_HOST", "value": ""
+        } 
+        ]
+    }
+  ]
